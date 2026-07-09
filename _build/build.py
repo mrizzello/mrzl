@@ -118,15 +118,17 @@ def build_body() -> str:
         w('<article class="cv-item">')
         w('<div class="cv-meta">')
         end = fr_month_year(item["end"]) if item["end"] else "act."
-        w(f'<div class="dates">{fr_month_year(item["begin"])} &ndash; {end}</div>')
+        w(f'<div class="dates">{fr_month_year(item["begin"])} - {end}</div>')
         w(f'<div class="city">{h(item["city"])}</div>')
         w(f'<div class="type">{type_badge(item["type"])}</div>')
         w("</div>")
         w('<div class="cv-body">')
+        w('<div class="cv-text">')
         w(f'<h3>{h(item["title"])}</h3>')
         contract = f'<span class="contract">| {h(item["contract"])}</span>' if item.get("contract") else ""
         w(f'<div class="employer">{h(item["employer"])}{contract}</div>')
         w(f'<div class="content">{item["content"]}</div>')
+        w("</div>")
         if item.get("tools"):
             w('<div class="tags">')
             for t in item["tools"]:
@@ -195,8 +197,12 @@ def build_body() -> str:
     w("</div>")
     w("</section>")
 
-    w("<!-- ============ LANGUES ============ -->")
-    w('<section class="section" id="langues">')
+    # ============ LANGUES + PROJETS (deux colonnes) ============
+    w("<!-- ============ LANGUES + PROJETS ============ -->")
+    w('<section class="section">')
+    w('<div class="columns">')
+
+    w('<div class="col" id="langues">')
     w(f'<h2>{h(p["sections"]["languages"])}</h2>')
     w('<table class="tbl langs">')
     w("<tbody>")
@@ -204,10 +210,9 @@ def build_body() -> str:
         w(f'<tr><td><strong>{h(l["label"])}</strong></td><td>{h(l["comment"])}</td></tr>')
     w("</tbody>")
     w("</table>")
-    w("</section>")
+    w("</div>")
 
-    w("<!-- ============ PROJETS ============ -->")
-    w('<section class="section" id="projets">')
+    w('<div class="col" id="projets">')
     w(f'<h2>{h(p["sections"]["projects"])}</h2>')
     for pr in data["projects"]:
         url = (pr["url"][0] if pr["url"] else "#") if isinstance(pr["url"], list) else pr["url"]
@@ -220,6 +225,9 @@ def build_body() -> str:
         w(f'<div class="content">{pr["content"]}</div>')
         w("</div>")
         w("</div>")
+    w("</div>")
+
+    w("</div>")
     w("</section>")
 
     w("</main>")
