@@ -1,7 +1,7 @@
 profile:
   name: Michele Rizzello
   description: 'Michele Rizzello : Enseignant, Chimiste, Chef de projet technique, Développeur Web Full Stack, Graphiste'
-  location: Genève, CH
+  location: Morges (VD), CH
   subtitles:
   - Enseignant
   - Chimiste - Ingénieur ETS
@@ -121,15 +121,15 @@ profile:
   - label: Email
     href: mailto:m@rizzello.me
     icon: envelope-square.svg
-  - label: LinkedIn
-    href: https://linkedin.com/in/mrizzello
-    icon: linkedin.svg
-  - label: Twitter
-    href: https://twitter.com/michelerizzello
-    icon: twitter-square.svg
-  - label: Facebook
-    href: https://www.facebook.com/michelerizzello
-    icon: facebook-square.svg
+  # - label: LinkedIn
+  #   href: https://linkedin.com/in/mrizzello
+  #   icon: linkedin.svg
+  # - label: Twitter
+  #   href: https://twitter.com/michelerizzello
+  #   icon: twitter-square.svg
+  # - label: Facebook
+  #   href: https://www.facebook.com/michelerizzello
+  #   icon: facebook-square.svg
   sections:
     cv: Expérience
     edu: Formation
@@ -848,20 +848,26 @@ edu:
   begin: '2019-09-01'
   end: '2020-07-01'
 projects:
-- id: isotope
+- id: chimiegenerale
   order: 1
+  title: Coure de chimie générale
+  url: https://chimiegenerale.ch/
+  image: chimie.svg
+  content: <p>Ressource éducative libre proposant un cours de chimie générale au niveau gymnasial sous forme de manuel interactif.</p>
+- id: isotope
+  order: 2
   title: isotope.ch
   url: https://isotope.ch/
   image: isotope.svg
   content: <p>Application web proposant des jeux pour favoriser les automatismes dans l'apprentissage de la chimie</p>
 - id: graphisme
-  order: 2
+  order: 3
   title: Mon portfolio de graphiste
   url: https://goo.gl/photos/ZjP4f6bCEifytjr79
   image: project.2.svg
   content: <p>Des images, des images et des images...</p>
 - id: personnages
-  order: 3
+  order: 4
   title: personnages.ch
   url: https://www.personnages.ch/
   image: theater.svg

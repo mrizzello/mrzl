@@ -138,7 +138,7 @@
 {% for pr in projects %}
 <div class="project">
 <a class="project-img" href="{{ pr.href|h }}" target="_blank" rel="noopener" title="{{ pr.title|h }}">
-<img src="assets/projects/{{ pr.image|h }}" alt="{{ pr.title|h }}" width="200" height="200">
+<img src="assets/projects/{{ pr.image|h }}" alt="{{ pr.title|h }}" width="300" height="300">
 </a>
 <div class="project-body">
 <div class="project-title"><a href="{{ pr.href|h }}" target="_blank" rel="noopener">{{ pr.title|h }} &#8599;</a></div>
@@ -152,9 +152,9 @@
 
 </main>
 
-<footer class="footer">
+<!--footer class="footer">
 {{ render_social(p.social) }}
-</footer>
+</footer-->
 </div>
 
 <a href="#top" id="scroll-top" title="Haut de page" aria-label="Haut de page">&#8593;</a>
