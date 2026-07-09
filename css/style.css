@@ -129,6 +129,11 @@ details.projects[open] summary { border-bottom: 1px solid var(--line); }
 /* ---------------- Timeline ---------------- */
 .timeline-wrap { width: 100%; overflow-x: auto; }
 .timeline-wrap svg { width: 100%; height: auto; display: block; min-width: 560px; }
+/* couleurs des segments par type (comme le thème d'origine) */
+.timeline .item.edu circle, .timeline .item.edu line { stroke: #6000c1; }
+.timeline .item.chem circle, .timeline .item.chem line { stroke: #049ac2; }
+.timeline .item.de circle, .timeline .item.de line,
+.timeline .item.it circle, .timeline .item.it line { stroke: #990000; }
 
 /* ---------------- Tables (outils / langues) ---------------- */
 .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
