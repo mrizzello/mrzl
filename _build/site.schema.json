@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://michele.rizzello.me/site.schema.json",
+  "title": "mrzl — données du site (data/site.yaml)",
+  "description": "Source de vérité du CV/portfolio, consommée par _build/build.py. La racine est un OBJET (pas un tableau).",
+  "type": "object",
+  "required": ["profile", "cv", "edu", "projects"],
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "type": "object",
+      "required": ["name", "description", "location", "subtitles", "skills", "tools", "languages", "locations", "social", "sections"],
+      "additionalProperties": true,
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "location": { "type": "string" },
+        "subtitles": { "type": "array", "items": { "type": "string" } },
+        "skills": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["title", "items"],
+            "properties": {
+              "title": { "type": "string" },
+              "items": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "tools": {
+          "type": "object",
+          "description": "Catégorie -> { outil -> { level, comment } }",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "level": { "type": "number" },
+                "comment": { "type": "string" }
+              }
+            }
+          }
+        },
+        "languages": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["label", "comment"],
+            "properties": {
+              "label": { "type": "string" },
+              "comment": { "type": "string" },
+              "level": { "type": "number" }
+            }
+          }
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "bgcolor", "begin"],
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "bgcolor": { "type": "string" },
+              "begin": { "type": ["string", "null"] },
+              "end": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "social": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "href", "icon"],
+            "properties": {
+              "label": { "type": "string" },
+              "href": { "type": "string" },
+              "icon": { "type": "string" }
+            }
+          }
+        },
+        "sections": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    },
+    "cv": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "employer", "type", "city", "begin"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string" },
+          "order": { "type": "number" },
+          "title": { "type": "string" },
+          "employer": { "type": "string" },
+          "contract": { "type": ["string", "null"] },
+          "type": { "type": ["string", "null"] },
+          "city": { "type": "string" },
+          "tools": { "type": "array", "items": { "type": "string" } },
+          "begin": { "type": ["string", "null"] },
+          "end": { "type": ["string", "null"] },
+          "content": { "type": "string" },
+          "projects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "content"],
+              "properties": {
+                "title": { "type": "string" },
+                "urls": { "type": "array", "items": { "type": "string" } },
+                "tools": { "type": "array", "items": { "type": "string" } },
+                "content": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "edu": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string" },
+          "order": { "type": "number" },
+          "title": { "type": "string" },
+          "type": { "type": ["string", "null"] },
+          "institution": { "type": ["string", "null"] },
+          "topic": { "type": ["string", "null"] },
+          "prix": { "type": ["string", "null"] },
+          "begin": { "type": ["string", "null"] },
+          "end": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "url", "image", "content"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string" },
+          "order": { "type": "number" },
+          "title": { "type": "string" },
+          "url": { "type": "string" },
+          "image": { "type": "string" },
+          "content": { "type": "string" }
+        }
+      }
+    }
+  }
+}
