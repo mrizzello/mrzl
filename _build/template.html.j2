@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>{{ p.name|h }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ p.description|h }}">
+  <link rel="canonical" href="https://rizzello.me/">
+  <link rel="icon" type="image/x-icon" href="assets/favico.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<!-- ============ HEADER ============ -->
+<header class="hero" id="top">
+<img class="portrait" src="assets/michele-rizzello.jpg" alt="{{ p.name|h }}" width="180" height="180">
+<h1 class="name">{{ p.name|h }}</h1>
+<ul class="subtitles">
+{% for s in p.subtitles %}<li>{{ s|h }}</li>{% endfor %}
+</ul>
+<div class="location">{{ p.location|h }} <img src="assets/ch.png" alt="Suisse" width="18" height="12"></div>
+{{ render_social(p.social) }}
+</header>
+
+<main>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+<div class="columns">
+{% for key in ("hardSkills", "softSkills") %}
+{% set block = p.skills[key] %}
+<div class="col">
+<h2>{{ block.title|h }}</h2>
+<ul class="bullets">
+{% for i in block["items"] %}<li>{{ i|h }}</li>{% endfor %}
+</ul>
+</div>
+{% endfor %}
+</div>
+</section>
+
+<!-- ============ EXPÉRIENCE ============ -->
+<section class="section" id="experience">
+<h2>{{ p.sections.cv|h }}</h2>
+{% for item in cv_items %}
+<article class="cv-item">
+<div class="cv-meta">
+<div class="dates">{{ item.begin|frmy }} - {% if item.end %}{{ item.end|frmy }}{% else %}act.{% endif %}</div>
+<div class="city">{{ item.city|h }}</div>
+<div class="type">{{ type_badge(item.type) }}</div>
+</div>
+<div class="cv-body">
+<div class="cv-text">
+<h3>{{ item.title|h }}</h3>
+<div class="employer">{{ item.employer|h }}{% if item.contract %}<span class="contract">| {{ item.contract|h }}</span>{% endif %}</div>
+<div class="content">{{ item.content }}</div>
+</div>
+{% if item.tools %}
+<div class="tags">
+{% for t in item.tools %}<span class="tag">{{ t|h }}</span>{% endfor %}
+</div>
+{% endif %}
+{% if item.projects %}
+<details class="projects">
+<summary>Projets ({{ item.projects|length }})</summary>
+<div class="projects-body">
+{% for pr in item.projects %}
+<h4>{{ pr.title|h }}</h4>
+{% if pr.urls %}
+<ul class="url">
+{% for u in pr.urls %}<li><a href="{{ u|h }}" target="_blank" rel="noopener">{{ u|h }}</a></li>{% endfor %}
+</ul>
+{% endif %}
+<div class="content">{{ pr.content }}</div>
+{% if pr.tools %}
+<div class="tags">
+{% for t in pr.tools %}<span class="tag">{{ t|h }}</span>{% endfor %}
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</details>
+{% endif %}
+</div>
+</article>
+{% endfor %}
+</section>
+
+<!-- ============ FORMATION ============ -->
+<section class="section" id="formation">
+<h2>{{ p.sections.edu|h }}</h2>
+{% for e in edu_items %}
+<div class="edu-item">
+<div class="edu-year">{{ e.end|fryr }}</div>
+<div class="edu-title">{{ e.title|h }}</div>
+<div class="edu-topic">{{ e.topic|h }}</div>
+<div class="edu-inst">{{ e.institution|h }}{% if e.prix %}<div class="prix">{{ e.prix|h }}</div>{% endif %}</div>
+</div>
+{% endfor %}
+{% if edu_footer %}<p class="edu-footer">{{ edu_footer.title|h }}</p>{% endif %}
+</section>
+
+<!-- ============ TIMELINE (JS) ============ -->
+<section class="section" id="timeline">
+<h2>{{ p.sections.timeline|h }}</h2>
+<div id="timeline-svg" class="timeline-wrap" aria-label="Chronologie carrière et formation"></div>
+</section>
+
+<!-- ============ INFORMATIQUE ============ -->
+<section class="section" id="tools">
+<h2>{{ p.sections.tools|h }}</h2>
+<div class="tools-grid">
+{% for cat, tools in p.tools.items() %}
+<table class="tbl">
+<thead><tr><th colspan="2">{{ cat|h }}</th></tr></thead>
+<tbody>
+{% for name, t in tools.items() %}<tr><td>{{ name|h }}</td><td>{{ t.get("comment", "")|h }}</td></tr>{% endfor %}
+</tbody>
+</table>
+{% endfor %}
+</div>
+</section>
+
+<!-- ============ LANGUES + PROJETS ============ -->
+<section class="section">
+<div class="columns">
+<div class="col" id="langues">
+<h2>{{ p.sections.languages|h }}</h2>
+<table class="tbl langs">
+<tbody>
+{% for l in languages %}<tr><td><strong>{{ l.label|h }}</strong></td><td>{{ l.comment|h }}</td></tr>{% endfor %}
+</tbody>
+</table>
+</div>
+<div class="col" id="projets">
+<h2>{{ p.sections.projects|h }}</h2>
+{% for pr in projects %}
+<div class="project">
+<a class="project-img" href="{{ pr.href|h }}" target="_blank" rel="noopener" title="{{ pr.title|h }}">
+<img src="assets/projects/{{ pr.image|h }}" alt="{{ pr.title|h }}" width="200" height="200">
+</a>
+<div class="project-body">
+<div class="project-title"><a href="{{ pr.href|h }}" target="_blank" rel="noopener">{{ pr.title|h }} &#8599;</a></div>
+<div class="content">{{ pr.content }}</div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+{{ render_social(p.social) }}
+</footer>
+</div>
+
+<a href="#top" id="scroll-top" title="Haut de page" aria-label="Haut de page">&#8593;</a>
+<script id="timeline-data" type="application/json">{{ timeline_json }}</script>
+<script src="js/timeline.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

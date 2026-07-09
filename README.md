@@ -3,8 +3,8 @@
 CV / portfolio statique servi par **GitHub Pages** sous le domaine
 [`michele.rizzello.me`](https://michele.rizzello.me).
 
-Aucune dépendance, aucun serveur, aucun build côté client : la page est
-**pré-générée en local** (Python) puis servie telle quelle.
+Aucune dépendance côté client, aucun serveur : la page est **pré-générée en local**
+(Python + Jinja) puis servie telle quelle.
 
 ## Structure
 
@@ -14,25 +14,38 @@ Aucune dépendance, aucun serveur, aucun build côté client : la page est
 ├── CNAME               # domaine personnalisé (GitHub Pages)
 ├── css/style.css       # styles autonomes, responsives
 ├── js/
-│   ├── timeline.js     # génère la chronologie SVG depuis data/site.json (au chargement)
+│   ├── timeline.js     # génère la chronologie SVG à partir des données embarquées
 │   └── main.js         # bouton « retour en haut »
-├── data/site.json      # SOURCE DE VÉRITÉ des contenus (expériences, formations, projets…)
+├── data/site.yaml      # SOURCE DE VÉRITÉ des contenus (expériences, formations, projets…)
 ├── assets/             # photo, drapeau, icônes, images des projets, favicon
-├── _build/build.py     # générateur : data/site.json -> index.html (dev only, non publié)
+├── _build/
+│   ├── build.py         # générateur : data/site.yaml -> index.html (dev only, non publié)
+│   └── template.html.j2 # template Jinja
+├── requirements.txt    # PyYAML + Jinja2
 └── README.md
+```
+
+## Prérequis (une fois)
+
+Le générateur a besoin de **PyYAML** et **Jinja2**. Via un environnement virtuel :
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
 ```
 
 ## Flux de travail (éditer → publier)
 
-1. Modifier le contenu dans **`data/site.json`** (ou, ponctuellement, `index.html`).
+1. Modifier le contenu dans **`data/site.yaml`**.
 2. Régénérer la page :
 
    ```bash
-   python3 _build/build.py     # data/site.json -> index.html
+   .venv/bin/python _build/build.py     # data/site.yaml -> index.html
    ```
 
-   > La Timeline n'a pas besoin d'être régénérée : `js/timeline.js` la
-   > (re)construit à chaque chargement de page à partir de `data/site.json`.
+   > La Timeline se reconstruit toute seule au chargement : `_build/build.py`
+   > embarque les données nécessaires dans la page (`<script id="timeline-data">`)
+   > et `js/timeline.js` les lit et dessine le SVG.
 3. Committer puis pousser. GitHub Pages sert automatiquement la nouvelle version.
 
    ```bash
@@ -41,8 +54,9 @@ Aucune dépendance, aucun serveur, aucun build côté client : la page est
 
 ## Test local
 
-`index.html` charge `data/site.json` via `fetch()`, qui ne fonctionne pas en
-`file://`. Servir via un petit serveur HTTP :
+Le site est entièrement statique (les données de la timeline sont embarquées dans
+`index.html`, plus aucun `fetch`), donc il fonctionne même en ouvrant le fichier
+en `file://`. Pour un rendu fidèle on peut aussi servir via un petit serveur HTTP :
 
 ```bash
 python3 -m http.server 8000     # puis http://localhost:8000
@@ -63,7 +77,8 @@ Dépôt dédié (`mrizzello/mrzl`), Pages configuré sur **branche `master` / do
 
 ## À propos du générateur
 
-`_build/build.py` est la transposition Python de l'ancien `build.php` (site
-d'origine sous Grav CMS, désormais abandonné). Il pré-rend toutes les sections en
-HTML statique (bon pour le SEO et le fonctionnement sans JavaScript). `data/site.json`
-est la seule source de contenu à maintenir.
+`_build/build.py` lit **`data/site.yaml`** (seule source à maintenir) et rend le
+template Jinja `_build/template.html.j2` pour produire `index.html`, avec toutes les
+sections pré-rendues en HTML statique (bon pour le SEO et le fonctionnement sans
+JavaScript). Le rendu vise à reproduire l'apparence du site d'origine (thème Grav,
+désormais abandonné).

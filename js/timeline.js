@@ -1,5 +1,6 @@
 /**
- * Timeline SVG — généré dynamiquement depuis data/site.json.
+ * Timeline SVG — généré dynamiquement depuis les données embarquées (#timeline-data,
+ * issues de data/site.yaml au build).
  * Reproduit fidèlement la logique du template Grav d'origine :
  *   - collection = formations (edu, par begin asc) puis expériences (cv, par begin asc)
  *   - axe : 1er janvier de la 1re année -> 31 décembre de l'année courante, largeur 600
@@ -129,12 +130,13 @@
     host.appendChild(svg);
   }
 
-  fetch('data/site.json')
-    .then(function (r) { return r.json(); })
-    .then(build)
-    .catch(function (e) {
-      var host = document.getElementById('timeline-svg');
-      if (host) host.textContent = 'Impossible de charger la chronologie.';
-      console.error(e);
-    });
+  // Données embarquées dans la page par _build/build.py (source : data/site.yaml).
+  try {
+    var node = document.getElementById('timeline-data');
+    build(JSON.parse(node.textContent));
+  } catch (e) {
+    var host = document.getElementById('timeline-svg');
+    if (host) host.textContent = 'Impossible de charger la chronologie.';
+    console.error(e);
+  }
 })();
