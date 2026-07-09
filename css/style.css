@@ -1,0 +1,162 @@
+:root {
+  --text: #4a4a4a;
+  --muted: #7a7a7a;
+  --line: #e8e8e8;
+  --dark: #363636;
+  --accent: #4a4a4a;
+  --tag-bg: #f1f1f1;
+  --max: 960px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a { color: var(--dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0 0 1.5rem;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--line);
+}
+h3 { font-size: 1.15rem; font-weight: 700; margin: 0 0 .2rem; color: var(--dark); }
+h4 { font-size: 1rem; font-weight: 700; margin: 1rem 0 .3rem; color: var(--dark); }
+
+ul { margin: .4rem 0; padding-left: 1.2rem; }
+
+/* ---------------- Layout ---------------- */
+.section { padding: 2.5rem 0; border-top: 1px solid #f2f2f2; }
+.section:first-of-type { border-top: none; }
+
+.columns { display: flex; flex-wrap: wrap; gap: 2rem; }
+.columns .col { flex: 1 1 300px; }
+
+/* ---------------- Hero ---------------- */
+.hero { text-align: center; padding: 3rem 0 2rem; }
+.hero .portrait {
+  width: 180px; height: 180px; border-radius: 50%;
+  object-fit: cover; box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.15);
+}
+.hero .name { font-size: 2rem; font-weight: 700; margin: 1rem 0 .5rem; color: var(--dark); }
+.subtitles { list-style: none; padding: 0; margin: 0 0 .8rem; color: var(--muted); }
+.subtitles li { display: inline; }
+.subtitles li:not(:last-child)::after { content: " · "; color: #ccc; }
+.location { color: var(--muted); font-size: .95rem; }
+.location img { vertical-align: middle; }
+
+/* ---------------- Social ---------------- */
+.social { display: flex; justify-content: center; gap: 1.2rem; margin-top: 1.2rem; }
+.social img { width: 28px; height: 28px; opacity: .75; transition: opacity .2s; }
+.social a:hover img { opacity: 1; }
+
+/* ---------------- Skills ---------------- */
+.bullets { padding-left: 1.1rem; }
+.bullets li { margin-bottom: .35rem; }
+
+/* ---------------- Expérience (CV) ---------------- */
+.cv-item { display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+.cv-meta {
+  flex: 0 0 130px; text-align: right; font-size: .8rem; color: var(--muted);
+}
+.cv-meta .dates { font-weight: 600; }
+.cv-meta .city { margin: .2rem 0; }
+.cv-meta .type { margin-top: .6rem; }
+.cv-meta .type img { display: inline-block; }
+.cv-meta .type-label { display: block; font-style: italic; font-size: .72rem; }
+.cv-body { flex: 1 1 auto; border-left: 2px solid var(--line); padding-left: 1.5rem; }
+.employer { color: var(--muted); margin-bottom: .6rem; }
+.employer .contract { color: #aaa; }
+.content p { margin: .4rem 0; }
+.content ul { margin: .4rem 0; }
+
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: .8rem 0; }
+.tag {
+  background: var(--tag-bg); color: #555; font-size: .72rem;
+  padding: .2rem .55rem; border-radius: 3px; white-space: nowrap;
+}
+
+details.projects { margin-top: .8rem; border: 1px solid var(--line); border-radius: 4px; }
+details.projects summary {
+  cursor: pointer; padding: .5rem .8rem; font-weight: 600; font-size: .85rem;
+  background: #fafafa; user-select: none;
+}
+details.projects[open] summary { border-bottom: 1px solid var(--line); }
+.projects-body { padding: .3rem 1rem 1rem; font-size: .9rem; }
+.projects-body ul.url { padding-left: 1.1rem; }
+.projects-body ul.url a { word-break: break-all; }
+
+/* ---------------- Formation ---------------- */
+.edu-item {
+  display: grid;
+  grid-template-columns: 70px 1.4fr 1.2fr 1.4fr;
+  gap: 1rem; align-items: baseline;
+  padding: .6rem 0; border-bottom: 1px solid #f2f2f2;
+}
+.edu-year { font-weight: 600; }
+.edu-title { font-weight: 700; color: var(--dark); }
+.edu-topic { color: var(--muted); }
+.prix { font-size: .8rem; color: var(--muted); font-style: italic; }
+.edu-footer { font-style: italic; color: var(--muted); text-align: center; margin-top: 1rem; }
+
+/* ---------------- Timeline ---------------- */
+.timeline-wrap { width: 100%; overflow-x: auto; }
+.timeline-wrap svg { width: 100%; height: auto; display: block; min-width: 560px; }
+
+/* ---------------- Tables (outils / langues) ---------------- */
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.tbl { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.tbl th {
+  text-align: left; font-weight: 700; color: var(--dark);
+  border-bottom: 2px solid var(--line); padding: .4rem .3rem;
+}
+.tbl td { padding: .35rem .3rem; border-bottom: 1px solid #f2f2f2; }
+.tbl tbody tr:hover { background: #fafafa; }
+.langs { max-width: 420px; }
+
+/* ---------------- Projets ---------------- */
+.project { display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 2rem; }
+.project-img img { width: 200px; height: auto; border-radius: 4px; }
+.project-body { flex: 1; }
+.project-title { font-size: 1.1rem; font-weight: 600; margin-bottom: .3rem; }
+
+/* ---------------- Footer ---------------- */
+.footer { padding: 2.5rem 0; border-top: 1px solid var(--line); margin-top: 1rem; }
+
+/* ---------------- Scroll top ---------------- */
+#scroll-top {
+  position: fixed; right: 20px; bottom: 20px;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--dark); color: #fff; font-size: 1.2rem;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity .25s; text-decoration: none;
+}
+#scroll-top.visible { opacity: .85; pointer-events: auto; }
+#scroll-top:hover { opacity: 1; text-decoration: none; }
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 720px) {
+  .cv-item { flex-direction: column; gap: .5rem; }
+  .cv-meta { flex-basis: auto; text-align: left; display: flex; gap: 1rem; align-items: center; }
+  .cv-meta .type { margin-top: 0; }
+  .cv-meta .type-label { display: inline; }
+  .cv-body { border-left: none; padding-left: 0; border-top: 2px solid var(--line); padding-top: .6rem; }
+  .edu-item { grid-template-columns: 1fr; gap: .2rem; text-align: left; }
+  .edu-year { color: var(--muted); }
+  .project { flex-direction: column; }
+  .project-img img { width: 140px; }
+}

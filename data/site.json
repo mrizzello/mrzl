@@ -1,0 +1,848 @@
+{
+    "profile": {
+        "name": "Michele Rizzello",
+        "description": "Michele Rizzello : Enseignant, Chimiste, Chef de projet technique, Développeur Web Full Stack, Graphiste",
+        "location": "Genève, CH",
+        "subtitles": [
+            "Enseignant",
+            "Chimiste - Ingénieur ETS",
+            "Développeur Web",
+            "Graphiste"
+        ],
+        "skills": {
+            "hardSkills": {
+                "title": "Compétences clés",
+                "items": [
+                    "Engagement dans des démarches d'innovation ou de recherche.",
+                    "Recours à des approches interdisciplinaires.",
+                    "Conception et développement de solutions informatiques.",
+                    "Conduite de projet et encadrement d’équipes."
+                ]
+            },
+            "softSkills": {
+                "title": "Compétences personnelles",
+                "items": [
+                    "Motivation pour les problématiques didactiques et pédagogiques.",
+                    "Sens de l’écoute et de la communication.",
+                    "Capacités d’organisation et sens des responsabilités.",
+                    "Capacité d'adaptation et créativité."
+                ]
+            }
+        },
+        "tools": {
+            "Programmation": {
+                "PHP": {
+                    "level": 100,
+                    "comment": "Expert"
+                },
+                "Javascript": {
+                    "level": 100,
+                    "comment": "Expert"
+                },
+                "Typescript": {
+                    "level": 80,
+                    "comment": "Avancé"
+                },
+                "Python": {
+                    "level": 75,
+                    "comment": "Intermédiaire"
+                }
+            },
+            "CMS": {
+                "Drupal": {
+                    "level": 100,
+                    "comment": "Expert"
+                },
+                "Magento": {
+                    "level": 66,
+                    "comment": "Intermédiaire"
+                },
+                "Grav CMS": {
+                    "level": 66,
+                    "comment": "Intermédiaire"
+                },
+                "Wordpress": {
+                    "level": 30,
+                    "comment": "Novice"
+                }
+            },
+            "Frameworks": {
+                "Angular": {
+                    "level": 90,
+                    "comment": "Avancé"
+                },
+                "Symfony": {
+                    "level": 80,
+                    "comment": "Avancé"
+                },
+                "Yii": {
+                    "level": 75,
+                    "comment": "Intermédiaire"
+                },
+                "Slim": {
+                    "level": 75,
+                    "comment": "Intermédiaire"
+                }
+            },
+            "Frontend": {
+                "Sass": {
+                    "level": 90,
+                    "comment": "Avancé"
+                },
+                "Gulp": {
+                    "level": 90,
+                    "comment": "Avancé"
+                },
+                "Foundation": {
+                    "level": 90,
+                    "comment": "Avancé"
+                },
+                "Bootstrap": {
+                    "level": 90,
+                    "comment": "Avancé"
+                }
+            }
+        },
+        "languages": {
+            "en": {
+                "label": "Anglais",
+                "comment": "Expérimenté",
+                "level": 90
+            },
+            "fr": {
+                "label": "Français",
+                "comment": "Langue maternelle",
+                "level": 100
+            },
+            "it": {
+                "label": "Italien",
+                "comment": "Bilingue",
+                "level": 100
+            },
+            "es": {
+                "label": "Espagnol",
+                "comment": "Conversation",
+                "level": 30
+            },
+            "de": {
+                "label": "Allemand",
+                "comment": "De survie...",
+                "level": 10
+            }
+        },
+        "locations": [
+            {
+                "id": "ge1",
+                "label": "Genève",
+                "bgcolor": "#4a4a4a",
+                "begin": "1990-01-01",
+                "end": "2005-02-05"
+            },
+            {
+                "id": "pa1",
+                "label": "Paris",
+                "bgcolor": "#707070",
+                "begin": "2005-02-05",
+                "end": "2013-02-05"
+            },
+            {
+                "id": "ge2",
+                "label": "Genève",
+                "bgcolor": "#4a4a4a",
+                "begin": "2013-02-05",
+                "end": "2019-07-01"
+            },
+            {
+                "id": "vd1",
+                "label": "Vaud",
+                "bgcolor": "#707070",
+                "begin": "2019-07-01",
+                "end": null
+            }
+        ],
+        "social": [
+            {
+                "label": "Email",
+                "href": "mailto:m@rizzello.me",
+                "icon": "envelope-square.svg"
+            },
+            {
+                "label": "LinkedIn",
+                "href": "https://linkedin.com/in/mrizzello",
+                "icon": "linkedin.svg"
+            },
+            {
+                "label": "Twitter",
+                "href": "https://twitter.com/michelerizzello",
+                "icon": "twitter-square.svg"
+            },
+            {
+                "label": "Facebook",
+                "href": "https://www.facebook.com/michelerizzello",
+                "icon": "facebook-square.svg"
+            }
+        ],
+        "sections": {
+            "cv": "Expérience",
+            "edu": "Formation",
+            "timeline": "Timeline",
+            "tools": "Informatique",
+            "languages": "Langues",
+            "projects": "Projets"
+        }
+    },
+    "cv": [
+        {
+            "id": "eig",
+            "order": 1,
+            "title": "Assistanat de laboratoire de Chimie",
+            "employer": "DIP - Ecole d'Ingénieurs de Genève",
+            "contract": "CDD",
+            "type": "chem",
+            "city": "Genève (CH)",
+            "tools": [],
+            "begin": "1999-11-01",
+            "end": "2004-08-01",
+            "content": "<p>Assistanat de laboratoire de Chimie - étudiants 1ère et 2ème année</p>\n<ul>\n<li>Encadrement et animation des laboratoires de chimie et enseignement des connaissances chimiques et techniques aux étudiants</li>\n<li>Groupes de 12 étudiants de 15 à 18 ans</li>\n<li>Correction des rapports des travaux pratiques et évaluation des connaissances des étudiants lors des examens oraux</li>\n<li>Remplacements dans divers établissements secondaires du canton</li>\n</ul>",
+            "projects": []
+        },
+        {
+            "id": "graphiste",
+            "order": 2,
+            "title": "Activité indépendante",
+            "employer": "Graphiste",
+            "contract": "Indépendant",
+            "type": "de",
+            "city": "Genève (CH)",
+            "tools": [
+                "Drupal 7",
+                "Drupal 6",
+                "Yii"
+            ],
+            "begin": "2004-09-01",
+            "end": "2007-05-21",
+            "content": "<ul>\n<li>Impression: Création d'affiches, flyers, brochures, couvertures de livres, identités visuelles</li>\n<li>Événement: Création de scénographies, visuels pour conférences</li>\n<li>Institutionnel: Création et développement Flash</li>\n<li>Web: Création graphique, développement et intégration</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "Fêtons Linux",
+                    "urls": [
+                        "http://www.fetonslinux.ch"
+                    ],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Conception du logo et de la charte graphique de l'événement</li>\n<li>Déclinaison de la charte graphique sur différents supports (affiche, flyers, bannières)</li>\n<li>Création et développement du site internet</li>\n<li>Création d'un module de réservation de présence pour les ateliers</li>\n<li>Création de l'application Android de l'événement</li>\n</ul>"
+                },
+                {
+                    "title": "Theatre les 50",
+                    "urls": [
+                        "http://www.theatreles50.fr"
+                    ],
+                    "tools": [
+                        "Drupal 7",
+                        "Yii"
+                    ],
+                    "content": "<ul>\n<li>Conception du logo de la compagnie et déclinaison de la charte graphique</li>\n<li>Création des affiches et flyers de la compagnie théâtrale</li>\n<li>Création du site internet de la compagnie</li>\n<li>Création d'une centrale de réservation en ligne pour les spectacles de la compagnie</li>\n</ul>"
+                },
+                {
+                    "title": "Jean-Marie Heidinger",
+                    "urls": [
+                        "http://www.heidingerjm.com"
+                    ],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Création du site internet pour un photographe indépendant</li>\n</ul>"
+                },
+                {
+                    "title": "Plein Feu",
+                    "urls": [
+                        "http://www.pleinfeu.fr"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Création graphique, conception et développement d’un CD-ROM (Flash, Actionscript) pour la promotion de la ratification de la convention du travail maritime 2006 pour le Bureau International du Travail</li>\n<li>Conception de scénographies événementielles - Congrès du CSOEC 2007</li>\n<li>Conception de scénographies événementielles - Congrès des notaires de France 2007</li>\n<li>Conception de scénographies événementielles - SCNF – Salon de l'éducation</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "unlost",
+            "order": 3,
+            "title": "Ingénieur de programmation / Graphiste",
+            "employer": "Unlost SA",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Paris (F)",
+            "tools": [
+                "Zend",
+                "Yii",
+                "PHP",
+                "Drupal 6",
+                "Drupal 7",
+                "Ubercart",
+                "Magento"
+            ],
+            "begin": "2007-05-21",
+            "end": "2011-09-14",
+            "content": "<ul>\n<li>Création, développement et maintenance de sites internet pour différents clients, PME et sociétés de taille moyenne</li>\n<li>Gestion de projets, intervention sur le cycle de développement en V complet ou partiel</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "Prixtel",
+                    "urls": [
+                        "http://www.prixtel.com"
+                    ],
+                    "tools": [
+                        "Magento"
+                    ],
+                    "content": "<ul>\n<li>Développement d'une boutique en ligne pour un opérateur télécommunication</li>\n<li>Gestion du projet et des équipes – 3 personnes</li>\n<li>Déploiement de la plate-forme e-commerce Magento</li>\n<li>Configuration de la boutique et des produits selon cahier des charges</li>\n<li>Intégration graphique selon maquettes</li>\n<li>Développement d'un module d'import/export de données vers un SI existantbgcolor</li>\n</ul>"
+                },
+                {
+                    "title": "Vacances USA",
+                    "urls": [
+                        "http://www.vacancesusa.com"
+                    ],
+                    "tools": [
+                        "Drupal 6",
+                        "Ubercart"
+                    ],
+                    "content": "<ul>\n<li>Développement d'un site de vente de séjours en ligne pour les Etats-Unis</li>\n<li>Gestion du projet et des équipes – 2 personnes</li>\n<li>Déploiement du CMS Drupal pour la gestion du contenu</li>\n<li>Configuration du module Ubercart pour la vente de produits voyagiste</li>\n<li>Développement d'un module client SOAP d'import des villes et hôtels sur une base distante</li>\n<li>Développement d'un module client SOAP d'interrogation de disponibilités et réservation sur une base de donnée distante</li>\n<li>Création et intégration graphique selon charte graphique fournie par agence</li>\n</ul>"
+                },
+                {
+                    "title": "Ethics & Boards",
+                    "urls": [
+                        "http://www.ethicsandboards.com"
+                    ],
+                    "tools": [
+                        "Drupal 6",
+                        "Ubercart"
+                    ],
+                    "content": "<ul>\n<li>Développement d'un site observatoire international des comités d'administration</li>\n<li>Déploiement du CMS Drupal pour le gestion du contenu</li>\n<li>Dessin de la base de donnée stockant les informations des comités d'administration</li>\n<li>Développement d'un module de saisie de données</li>\n<li>Développement d'un module d’interrogation statistique multicritère de la base de donnée</li>\n<li>Configuration du module Ubercart pour la vente d'abonnement en ligne</li>\n<li>Intégration graphique selon maquette</li>\n</ul>"
+                },
+                {
+                    "title": "Badiliz",
+                    "urls": [
+                        "http://www.badiliz.fr"
+                    ],
+                    "tools": [
+                        "Composants PHP internes"
+                    ],
+                    "content": "<ul>\n<li>Développement et maintenance d'un site de petites annonces pour particuliers</li>\n<li>Développement basé sur des composants internes</li>\n<li>Développement d'un module de jeux-concours en ligne</li>\n<li>Développement d'une application d'e-mailing liée à la base utilisateurs</li>\n<li>Refonte graphique du site</li>\n<li>Intégration de flux kelkoo en marque blanche</li>\n<li>Création graphique d'événements ponctuels en ligne</li>\n<li>Création graphique de newsletters</li>\n<li>Création de bannières publicitaires Flash</li>\n</ul>"
+                },
+                {
+                    "title": "Plateforme d'hébergement multi-sites",
+                    "urls": [
+                        "http://www.poulmairejacob.com",
+                        "http://www.un-autre-regard.eu",
+                        "http://www.nca-avocats.com"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Développement et maintenance d'une plate-forme d'hébergement pour sites vitrines de cabinets d'avocats</li>\n<li>Déploiement du CMS Drupal en multisites</li>\n<li>Import et intégration graphique de sites HTML déjà existants</li>\n<li>Intégration graphique des sites depuis les fichiers .psd fournis par le graphiste</li>\n<li>Gestion de l'internationalisation du contenu</li>\n</ul>"
+                },
+                {
+                    "title": "Sites vitrines de cabinets de recrutement",
+                    "urls": [
+                        "http://www.vscrh.com",
+                        "http://www.neo2.eu"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Développement et maintenance de sites vitrine de cabinets de recrutement</li>\n<li>Déploiement du CMS Drupal pour la gestion du contenu</li>\n<li>Portage de contenu du site Flash existant sous Drupal</li>\n<li>Développement d'un module de dépôt d'offres d'emploi avec gestion des dépôt de candidature</li>\n<li>Refonte graphique simple du site</li>\n<li>Gestion de l'internationalisation du contenu</li>\n</ul>"
+                },
+                {
+                    "title": "KJ Conseils",
+                    "urls": [
+                        "http://www.kjconseils.com"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Développement et maintenance d'un site vitrine d'une société de communication</li>\n<li>Déploiement du CMS Drupal</li>\n<li>Intégration graphique des sites depuis les fichiers .psd fournis par le graphiste</li>\n<li>Gestion de l'internationalisation du contenu</li>\n</ul>"
+                },
+                {
+                    "title": "JS3A",
+                    "urls": [
+                        "http://www.js3a.com"
+                    ],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Développement et maintenance de sites vitrine d'un cabinet expert comptable</li>\n<li>Déploiement du CMS Drupal pour la gestion du contenu</li>\n<li>Refonte graphique et déclinaison de la charte graphique</li>\n</ul>"
+                },
+                {
+                    "title": "Si and so",
+                    "urls": [
+                        "http://www.siandso.com"
+                    ],
+                    "tools": [
+                        "Zend"
+                    ],
+                    "content": "<ul>\n<li>Développement d'un site de boutique de créateurs(trices) particuliers</li>\n<li>Développement du site basé sur le framework Zend</li>\n<li>Développement de la partie « compte » des utilisateurs</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "actency",
+            "order": 4,
+            "title": "Chef de projet technique / Ingénieur de programmation",
+            "employer": "Actency",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Paris (F)",
+            "tools": [
+                "Drupal 7"
+            ],
+            "begin": "2011-09-14",
+            "end": "2012-09-14",
+            "content": "<ul>\n<li>Création, développement et maintenance de sites internet pour différents clients, PME et sociétés de taille moyenne</li>\n<li>Gestion de projets, intervention sur le cycle de développement en V complet ou partiel</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "LeasePlan Go",
+                    "urls": [
+                        "http://www.leaseplango.fr"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Développement du site vitrine de la société avec un espace utilisateurs</li>\n<li>Rédaction des spécifications techniques sur la base des spécifications fonctionnelles fournies en interne</li>\n<li>Liaison avec le chef de projet et gestion de l'équipe de développement composée de quatre développeurs en interne</li>\n<li>Développement du site internet sur la base du CMS Drupal</li>\n<li>Développement d'une application de synchronisation avec le CRM Salesforce sur la base du module communautaire</li>\n</ul>"
+                },
+                {
+                    "title": "MSF epicentre-extranet",
+                    "urls": [
+                        "http://intranet.epicentre.msf.org"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Développement d'un extranet collaboratif</li>\n<li>Rédaction des spécifications techniques sur la base des spécifications fonctionnelles fournies en interne</li>\n<li>Liaison avec le chef de projet et gestion de l'équipe de développement composée de trois développeurs en interne et deux développeurs en externe</li>\n<li>Développement du site internet sur la base du CMS Drupal</li>\n<li>Développement d'une application de gestion des disponibilités, demandes de congés et demandes de voyages générées par les utilisateurs</li>\n<li>Développement d'une gestion électronique de documents simplifiée avec recherche à facette</li>\n</ul>"
+                },
+                {
+                    "title": "Patner locator Alcatel-Lucent",
+                    "urls": [
+                        "http://enterprise-partner-locator.alcatel-lucent.com"
+                    ],
+                    "tools": [
+                        "Drupal 6"
+                    ],
+                    "content": "<ul>\n<li>Développement d'une application de géolocalisation et recherche des sociétés partner</li>\n<li>Rédaction des spécifications techniques sur la base des spécifications fonctionnelles fournies en interne</li>\n<li>Liaison avec le chef de projet et gestion de l'équipe de développement composée de deux développeurs</li>\n<li>Développement du site internet sur la base du CMS Drupal</li>\n<li>Développement d'un serveur SOAP import des sociétés partenaires depuis une application J2EE</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "b&d",
+            "order": 5,
+            "title": "Chef de projet technique / Ingénieur de programmation",
+            "employer": "Business & Decision",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Paris (F)",
+            "tools": [
+                "PHPFactory",
+                "Drupal 7"
+            ],
+            "begin": "2012-09-17",
+            "end": "2013-01-31",
+            "content": "<ul>\n<li>Création, développement et maintenance de sites internet pour différents clients, PME et sociétés de taille moyenne</li>\n<li>Gestion de projets, intervention sur le cycle de développement en V complet ou partiel</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "MyCanal",
+                    "urls": [
+                        "http://www.mycanal.fr"
+                    ],
+                    "tools": [
+                        "Zend",
+                        "PHPFactory"
+                    ],
+                    "content": "<ul>\n<li>Gestion du développement des api de liaison des webservices fournissant les contenus Canal+ (grille des programmes, détail des contenus, diffusions à la demande, informations utilisateur)</li>\n<li>Rédaction des spécifications techniques sur la base des spécifications fonctionnelles fournies par le client</li>\n<li>Développement des classes mères à destination des développeurs</li>\n<li>Liaison avec le chef de projet et suivi technique de l'équipe de développement (5 développeurs en interne)</li>\n<li>Développement du site internet sur la base du framework PHPFactory</li>\n</ul>"
+                },
+                {
+                    "title": "Élaboration de l'offre Drupal",
+                    "urls": [],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Regroupement d'informations concernant le CMS en vue de son intégration à l'offre commerciale de la société</li>\n<li>Rédaction d'un document de synthèse à destination des commerciaux, des techniciens et des clients</li>\n<li>Veille technologique</li>\n</ul>"
+                },
+                {
+                    "title": "Kayoo",
+                    "urls": [
+                        "http://www.kayoo.com"
+                    ],
+                    "tools": [
+                        "Zend",
+                        "PHPFactory"
+                    ],
+                    "content": "<ul>\n<li>Développement d'une application d'inter-évaluation des utilisateurs sur un intranet collaboratif professionnel</li>\n<li>Développement de l'application sur site le existant développé sur le framework PHPFactory</li>\n<li>Intégration du framework Bootstrap.js</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "choobs",
+            "order": 6,
+            "title": "Chef de projet technique",
+            "employer": "Choobs Ltd",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Genève (CH)",
+            "tools": [
+                "Symfony"
+            ],
+            "begin": "2013-08-19",
+            "end": "2013-10-31",
+            "content": "<ul>\n<li>Recueil du besoin client et rédaction des spécifications fonctionnelles et techniques pour la création de sites internet de clients moyen et grand comptes</li>\n<li>Gestion des ressources, suivi et assistance aux développement</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "Atlas management SA",
+                    "urls": [],
+                    "tools": [
+                        "Symfony"
+                    ],
+                    "content": "<ul>\n<li>Gestion des ressources et assistance à la programmation de l'équipe de développement (2 développeurs en interne)</li>\n<li>Rédaction des spécifications fonctionnelles</li>\n<li>Design du schéma de la base de donnée</li>\n<li>Rédaction des spécifications techniques</li>\n<li>Design des maquettes de l'application</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "saussure",
+            "order": 7,
+            "title": "Assistant de laboratoire",
+            "employer": "DIP - Collège de Saussure",
+            "contract": "CDD",
+            "type": "chem",
+            "city": "Genève (CH)",
+            "tools": [],
+            "begin": "2014-08-01",
+            "end": "2015-07-31",
+            "content": "<p>Assistanat de laboratoire de Chimie - étudiants 1e, 2e et 3e année</p>\n<ul>\n<li>Encadrement et animation des laboratoires de chimie</li>\n<li>Enseignement des connaissances chimiques et techniques aux étudiants</li>\n<li>Groupes de 12 étudiants de 15 à 18 ans</li>\n<li>Correction des rapports des travaux pratiques et évaluation des connaissances des étudiants lors des examens oraux</li>\n<li>Remplacements dans divers établissements secondaires du canton</li>\n</ul>",
+            "projects": []
+        },
+        {
+            "id": "destael",
+            "order": 8,
+            "title": "Suppléance enseignement en Chimie",
+            "employer": "DIP - Collège Madame de Staël",
+            "contract": "CDD",
+            "type": "chem",
+            "city": "Genève (CH)",
+            "tools": [],
+            "begin": "2014-08-01",
+            "end": "2015-07-31",
+            "content": "<ul>\n<li>Enseignement de la Chimie dans deux classes gymnasiales (1e et 2e DF)</li>\n<li>Enseignement, suivi et animation des cours et laboratoires de Chimie</li>\n<li>Evaluations de l'apprentissage des élèves et de leur progression</li>\n<li>Gestion administrative de la classe : contrôle des présences, tenue du registre des notes, inscription des évaluations et des moyennes</li>\n<li>Participation à la préparation des épreuves de fin d'études et jury des examens oraux</li>\n<li>Participation aux conférences des maîtres, travaux de coordination de la section de chimie et aux conseils de classe</li>\n<li>Rencontres et informations aux parents</li>\n</ul>",
+            "projects": []
+        },
+        {
+            "id": "hug",
+            "order": 9,
+            "title": "Expert web",
+            "employer": "HUG - Hôpitaux Universitaires de Genève",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Genève (CH)",
+            "tools": [
+                "Drupal 7"
+            ],
+            "begin": "2015-08-17",
+            "end": "2016-06-30",
+            "content": "<ul>\n<li>Référent institutionnel en matière d'analyse technique, conception, développement et sécurité des plateformes Web externes et internes</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "Hôpitaux Universitaires de Genève",
+                    "urls": [
+                        "http://www.hug-ge.ch"
+                    ],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Cartographie des systèmes web internes et externes existants</li>\n<li>Evaluation et hiérarchisation des besoins selon les priorités stratégiques, techniques, budgétaires et de sécurité</li>\n<li>Elaboration des cahiers des charges</li>\n<li>Définition des objectifs techniques et éditoriaux avec les utilisateurs</li>\n<li>Elaboration des méthodologies et des standards et contrôle de leur bonne application</li>\n<li>Maintient de la documentation technique des applications web et mobile</li>\n<li>Contrôle et validation des différentes phases de tests</li>\n<li>Développement des applications web en collaboration avec les partenaires externes</li>\n<li>Diagnostic des dysfonctionnements et mise en oeuvre de mesures correctrices</li>\n<li>Conduite de projets, direction des groupes de travail et des équipes de réalisation</li>\n<li>Evaluation des ressources nécessaires, établissement de planning et organisation générale</li>\n<li>Evaluation budgétaire et suivi des coûts</li>\n<li>Réalisation de la recette des délivrables</li>\n<li>Veille technologique et présence sur les réseaux sociaux</li>\n<li>Développement des compétences techniques des webmasters</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "saussure",
+            "order": 10,
+            "title": "Assistant de laboratoire",
+            "employer": "DIP - Collège de Saussure",
+            "contract": "CDD",
+            "type": "chem",
+            "city": "Genève (CH)",
+            "tools": [],
+            "begin": "2016-09-01",
+            "end": "2017-07-31",
+            "content": "<p>Assistanat de laboratoire de Chimie - étudiants 1e, 2e et 3e année</p>\n<ul>\n<li>Encadrement et animation des laboratoires de chimie</li>\n<li>Enseignement des connaissances chimiques et techniques aux étudiants</li>\n<li>Groupes de 12 étudiants de 15 à 18 ans</li>\n<li>Correction des rapports des travaux pratiques et évaluation des connaissances des étudiants lors des examens oraux</li>\n<li>Remplacements dans divers établissements secondaires du canton</li>\n</ul>",
+            "projects": []
+        },
+        {
+            "id": "wide",
+            "order": 12,
+            "title": "Ingénieur de programmation",
+            "employer": "Wide Agency",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Genève (CH)",
+            "tools": [
+                "Drupal 8",
+                "Drupal 7"
+            ],
+            "begin": "2017-06-01",
+            "end": "2018-11-30",
+            "content": "<p>Création, développement et maintenance de sites internet pour différents clients, PME et grand comptes</p>",
+            "projects": [
+                {
+                    "title": "Tag Heuer",
+                    "urls": [
+                        "https://www.tagheuer.com/ch/fr"
+                    ],
+                    "tools": [
+                        "Drupal 8"
+                    ],
+                    "content": "<ul>\n<li>Développement de nouvelles fonctionnalités et maintenance</li>\n</ul>"
+                },
+                {
+                    "title": "Banque SYZ SA",
+                    "urls": [
+                        "https://www.syzbank.com/"
+                    ],
+                    "tools": [
+                        "Drupal 8"
+                    ],
+                    "content": "<ul>\n<li>Développement de nouvelles fonctionnalités et maintenance</li>\n</ul>"
+                },
+                {
+                    "title": "LEM International SA",
+                    "urls": [
+                        "https://www.lem.com/"
+                    ],
+                    "tools": [
+                        "Drupal 8"
+                    ],
+                    "content": "<ul>\n<li>Développement de nouvelles fonctionnalités et maintenance</li>\n</ul>"
+                },
+                {
+                    "title": "Forestay",
+                    "urls": [],
+                    "tools": [
+                        "Drupal 8"
+                    ],
+                    "content": "<ul>\n<li>Conception et développement du site vitrine</li>\n</ul>"
+                },
+                {
+                    "title": "AP2S (Billetterie sport et événements)",
+                    "urls": [
+                        "https://www.ap2s.fr/"
+                    ],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Développement de nouvelles fonctionnalités et maintenance</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "ocsin",
+            "order": 13,
+            "title": "Développeur 2 DRUPAL et PHP",
+            "employer": "OCSIN - Etat de Genève",
+            "contract": "CDI",
+            "type": "it",
+            "city": "Genève (CH)",
+            "tools": [
+                "Drupal 8",
+                "Drupal 7",
+                "Symfony",
+                "PHP"
+            ],
+            "begin": "2018-12-01",
+            "end": "2019-08-25",
+            "content": "<ul>\n<li>Conception, développement et maintenance des solutions informatiques de l'État de Genève</li>\n<li>Assurer la prise en charge des incidents en niveau 3</li>\n<li>Maitrise des enjeux des développements exposés sur internet : sécurité, disponibilité et accessibilité</li>\n<li>Technologies Drupal, PHP ainsi que les méthodologies Agile (Scrum) et les pratiques basées sur ITIL</li>\n</ul>",
+            "projects": [
+                {
+                    "title": "Site officiel de l'État de Genève",
+                    "urls": [
+                        "https://www.ge.ch"
+                    ],
+                    "tools": [
+                        "Drupal 8",
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Développement de nouvelles fonctionnalités et maintenance</li>\n</ul>"
+                },
+                {
+                    "title": "Sites intranets des différents départements de l'État de Genève et de l'office cantonal de la détention",
+                    "urls": [],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Développement de nouvelles fonctionnalités et maintenance</li>\n<li>Factorisation du code en une distribution Drupal unique pour réduire les coûts de maintenance</li>\n</ul>"
+                },
+                {
+                    "title": "Site de publication de la feuille d'avis officielle",
+                    "urls": [
+                        "https://fao.ge.ch/"
+                    ],
+                    "tools": [
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Sécurisation et maintenance</li>\n</ul>"
+                },
+                {
+                    "title": "Migration des sites de Drupal 7 vers Drupal 8",
+                    "urls": [
+                        "https://www.ge.ch"
+                    ],
+                    "tools": [
+                        "Drupal 8",
+                        "Drupal 7"
+                    ],
+                    "content": "<ul>\n<li>Développement du nouveau thème et étude des procédures de migration des contenus</li>\n</ul>"
+                },
+                {
+                    "title": "Mise en oeuvre Docker",
+                    "urls": [],
+                    "tools": [],
+                    "content": "<ul>\n<li>Mise à niveau de l'outillage de développement Drupal basé sur docker pour faciliter le travail des développeurs</li>\n</ul>"
+                },
+                {
+                    "title": "Encadrement des apprentis",
+                    "urls": [],
+                    "tools": [],
+                    "content": "<ul>\n<li>Accueil et coaching d'une apprentie de 4e année de CFC en informatique</li>\n</ul>"
+                }
+            ]
+        },
+        {
+            "id": "stage-hep",
+            "order": 14,
+            "title": "Stage de formation pratique HEP",
+            "employer": "Gymnase de Chamblandes (DEF)",
+            "contract": null,
+            "type": "chem",
+            "city": "Pully (CH)",
+            "tools": [],
+            "begin": "2019-08-26",
+            "end": "2020-05-29",
+            "content": "<ul>\n<li>Stage de formation selon trois modalités : observation, en responsabilité partagée et en responsabilité</li>\n<li>15 périodes conduites au premier semestre, 30 périodes conduites au premier semestre</li>\n<li>11 périodes par semaine et 5 classes (1OS, 1DF, 2OS, 2DF, 3OS)</li>\n</ul>",
+            "projects": []
+        },
+        {
+            "id": "gnlc",
+            "order": 15,
+            "title": "Doyen - Enseignant secondaire 2",
+            "employer": "Gymnase d'Etoy (DEF)",
+            "contract": null,
+            "type": "chem",
+            "city": "Etoy (CH)",
+            "tools": [],
+            "begin": "2020-08-01",
+            "end": null,
+            "content": "<ul>\n<li>Doyen - Suivi de volée et tâches administratives (depuis septembre 2021).</li>\n<li>Enseignement de la chimie en École de Maturité et École de Culture Générale.</li>\n<li>Chef de file de chimie (jusqu'à septembre 2024).</li>\n<li>Responsable matériel - laboratoires de chimie (jusqu'à septembre 2024).</li>\n<li>Anciennement : Gymnase de Nyon - la Côte</li>\n</ul>",
+            "projects": []
+        }
+    ],
+    "edu": [
+        {
+            "id": "basic",
+            "order": 1,
+            "title": "Scolarité obligatoire sur le canton de Genève",
+            "type": null,
+            "institution": null,
+            "topic": null,
+            "prix": null,
+            "begin": null,
+            "end": null
+        },
+        {
+            "id": "ets",
+            "order": 2,
+            "title": "Ingénieur ETS",
+            "type": "edu",
+            "institution": "École d'Ingénieurs de Genève",
+            "topic": "Génie Chimique",
+            "prix": "Mention : bien - Prix spéciaux : EIG et STELLRAM",
+            "begin": "1990-09-01",
+            "end": "1996-06-01"
+        },
+        {
+            "id": "license",
+            "order": 3,
+            "title": "Licence ès sciences Chimiques",
+            "type": "edu",
+            "institution": "Université de Genève",
+            "topic": "Chimie Organique",
+            "prix": null,
+            "begin": "1996-10-01",
+            "end": "1999-07-01"
+        },
+        {
+            "id": "diplome",
+            "order": 4,
+            "title": "Diplôme ès sciences Chimiques",
+            "type": "edu",
+            "institution": "Université de Genève",
+            "topic": "Chimie computationnelle",
+            "prix": null,
+            "begin": "1999-10-01",
+            "end": "2003-07-01"
+        },
+        {
+            "id": "cfc",
+            "order": 5,
+            "title": "Certificat fédéral de capacité",
+            "type": "edu",
+            "institution": "Validation des acquis professionnels",
+            "topic": "CFC de Graphiste",
+            "prix": null,
+            "begin": "2006-10-01",
+            "end": "2007-06-01"
+        },
+        {
+            "id": "cas",
+            "order": 6,
+            "title": "Certificate of Advanced Study",
+            "type": "edu",
+            "institution": "Université de Genève",
+            "topic": "Nouvelles technologies du web",
+            "prix": null,
+            "begin": "2016-04-01",
+            "end": "2017-04-30"
+        },
+        {
+            "id": "hep",
+            "order": 7,
+            "title": "MAS Enseignement Secondaire II",
+            "type": "edu",
+            "institution": "Haute école pédagogique Vaud",
+            "topic": "Pédagogie",
+            "prix": "Prix du meilleur mémoire 2020",
+            "begin": "2019-09-01",
+            "end": "2020-07-01"
+        }
+    ],
+    "projects": [
+        {
+            "id": "isotope",
+            "order": 1,
+            "title": "isotope.ch",
+            "url": "https://isotope.ch/",
+            "image": "isotope.svg",
+            "content": "<p>Application web proposant des jeux pour favoriser les automatismes dans l'apprentissage de la chimie</p>"
+        },
+        {
+            "id": "graphisme",
+            "order": 2,
+            "title": "Mon portfolio de graphiste",
+            "url": "https://goo.gl/photos/ZjP4f6bCEifytjr79",
+            "image": "project.2.svg",
+            "content": "<p>Des images, des images et des images...</p>"
+        },
+        {
+            "id": "personnages",
+            "order": 3,
+            "title": "personnages.ch",
+            "url": "https://www.personnages.ch/",
+            "image": "theater.svg",
+            "content": "<p>Album souvenir de mes expériences de comédien professionnel</p>\n<ul>\n<li>Certificat d'étude du cours Florent (Paris)</li>\n<li>Formation de 2 ans au Conservatoire populaire de Genève</li>\n<li>Auteur et traducteur de pièces de théâtre</li>\n<li>Membre de la Société Suisse des Auteurs</li>\n</ul>"
+        }
+    ]
+}
